@@ -1,5 +1,23 @@
 ![Costura Icon](https://raw.github.com/Fody/Costura/master/Icons/package_icon.png)
+http://www.cnblogs.com/instance/archive/2015/10/09/4863811.html
+如果nuget安装失败，更换一个源地址
+https://api.nuget.org/v3/index.json
 
+#### 配置文件：
+'''
+
+<?xml version="1.0" encoding="utf-8"?>
+<Weavers>
+
+  <!-- 将dll拷贝到硬盘 -->
+  
+  <Costura CreateTemporaryAssemblies="true" />
+  
+  <!-- 关闭压缩 -->
+  
+  <Costura DisableCompression="false" />
+</Weavers>
+'''
 ### Costura is an add-in for [Fody](https://github.com/Fody/Fody/) 
 
 Embeds dependencies as resources.
