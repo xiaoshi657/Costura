@@ -7,8 +7,7 @@ http://www.cnblogs.com/instance/archive/2015/10/09/4863811.html
 https://api.nuget.org/v3/index.json
 
 #### 配置文件：
-'''
-
+```
 <?xml version="1.0" encoding="utf-8"?>
 <Weavers>
 
@@ -20,7 +19,7 @@ https://api.nuget.org/v3/index.json
   
   <Costura DisableCompression="false" />
 </Weavers>
-'''
+```
 ### Costura is an add-in for [Fody](https://github.com/Fody/Fody/) 
 
 Embeds dependencies as resources.
